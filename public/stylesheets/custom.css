@@ -1,0 +1,157 @@
+.container {
+    /*gives the container the width of 710 - everything on the page has this width */
+    /*styles an element with class container, giving it
+    a width of 710px, corresponding to 18 bluepring columns
+    the dot in .container indicates the rules styles is a class called
+    container; the # indicates id
+    */
+    width: 710px;
+}
+
+body {
+    /*background color*/
+    background: #cff;
+
+}
+
+header {
+    /* adds spacing above the top edge */
+    padding-top: 20px;
+}
+
+header img {
+    /*adds padding all around the image in the header */
+    padding: 1em;
+    /* adds (white) color to the image area including padding*/
+    /* if image was transparent, the color would show through*/
+    background: #fff;
+    
+}
+
+section {
+    /* nothing new, top margin*/
+    margin-top: 1em;
+    /* Increases all font in this section*/
+    font-size: 120%;
+    /* add padding around the entire section like box*/
+    padding: 20px;
+    /* adds color to the entire section area */
+    background: #fff;
+}
+
+section h1 {
+    /* actually decreased the font size of h1*/
+    font-size: 200%;    
+}
+
+/* Links */
+
+a {
+    /* sets font color of all links */
+    color: #09c;
+    /* removes the underline  */
+    text-decoration: none;
+}
+
+a:hover {
+    /* color when hover over link*/
+    color: #069;
+    /* underline when hover*/
+    text-decoration: underline;
+}
+
+a:visited {
+    /*  color of link that have clicked on */
+    color: #069;
+}
+
+/* Navigation */
+
+
+nav {
+    /* moves the nav section to the top right
+    of the container, below anything in the header */
+    float: right;
+}
+
+nav {
+    /* background color for nav */
+    background-color: white;
+    /* increased padding */
+    padding: 0 0.7em;
+    /*  */
+    white-space: nowrap;
+}
+
+nav ul {
+    /* */
+    margin: 0;
+    /* reduced the padding to exclude the bullets*/
+    padding: 0;
+}
+
+nav ul li {
+    /* remove bullets */
+    list-style-type: none;
+    /* makes list vertical */
+    display: inline-block;
+    /* */
+    padding: 0.2em 0;
+    
+}
+
+nav ul li a {
+    /* adds (horiz) padding between list items */
+    padding: 0 5px;
+    /* makes font bold */
+    font-weight: bold;
+}
+
+nav ul li a:visited {
+    color: #09c;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/*  Signup Button */
+
+a.signup_button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* center across selection*/
+    text-align: center;
+    width: 190px;
+    color: #fff;
+    background: #006400;
+    /* incr font size */
+    font-size: 150%;
+    font-weight: bold;
+    /* increased the size of the box */
+    padding: 20px;
+}
+
+/* Round corners */
+
+.round {
+    -moz-border-radius: 10px;
+    /* rounds corners */
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    /* additional space on top */
+    margin-top: 10px;
+    width: 710px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer nav {
+    /* overrides the float:right for the nav section */
+    float: none;
+}
